@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<!-- Persistent KONE Logo (Top Right - Hidden on Slide 1)[cite: 1] -->
+<!-- Persistent KONE Logo (Top Right - Hidden on Slide 1) -->
 <div class="header-kone kone-logo" id="persistent-kone">
     <span>K</span><span>O</span><span>N</span><span>E</span>
 </div>
@@ -35,27 +35,27 @@
         <div class="grid-2">
             <div class="card">
                 <h3>The Bottleneck (Current State)</h3>
-                <p><strong>Kamppi Mall Elevator Error 402</strong>[cite: 1]</p>
+                <p><strong>Kamppi Mall Elevator Error 402</strong></p>
                 <ul>
-                    <li>A critical fault triggers an alert, requiring a dispatcher to manually cross-reference IoT telemetry, SAP inventory, and Salesforce schedules[cite: 1].</li>
-                    <li>This manual data gathering consumes <span class="highlight-fault">up to 60 minutes</span> before a technician is even dispatched, extending total downtime to <span class="highlight-fault">5 hours</span>[cite: 1].</li>
-                    <li><strong>Business Risk:</strong> Violated service level agreements (SLAs) and constrained operational capacity[cite: 1].</li>
+                    <li>A critical fault triggers an alert, requiring a dispatcher to manually cross-reference IoT telemetry, SAP inventory, and Salesforce schedules.</li>
+                    <li>This manual data gathering consumes <span class="highlight-fault">up to 60 minutes</span> before a technician is even dispatched, extending total downtime to <span class="highlight-fault">5 hours</span>.</li>
+                    <li><strong>Business Risk:</strong> Violated service level agreements (SLAs) and constrained operational capacity.</li>
                 </ul>
             </div>
             <div class="card">
                 <h3>The Target State</h3>
-                <p><strong>Agentic AI via ChatOps (MS Teams)</strong>[cite: 1]</p>
+                <p><strong>Agentic AI via ChatOps (MS Teams)</strong></p>
                 <ul>
-                    <li>An AI securely queries these systems simultaneously, pushing a complete triage summary to <strong>Microsoft Teams</strong> in <span class="highlight">under 30 seconds</span>[cite: 1].</li>
-                    <li>The dispatcher clicks <strong>"Approve"</strong> to deploy the tech instantly, cutting the end-to-end incident time down to <span class="highlight">4 hours</span>[cite: 1].</li>
-                    <li><strong>Business Impact:</strong> Dispatchers can focus on critical decision-making rather than data hunting, driving a verifiable <span class="highlight">~20%</span> operational efficiency gain across the fleet[cite: 1].</li>            
+                    <li>An AI securely queries these systems simultaneously, pushing a complete triage summary to <strong>Microsoft Teams</strong> in <span class="highlight">under 30 seconds</span>.</li>
+                    <li>The dispatcher clicks <strong>"Approve"</strong> to deploy the tech instantly, cutting the end-to-end incident time down to <span class="highlight">4 hours</span>.</li>
+                    <li><strong>Business Impact:</strong> Dispatchers can focus on critical decision-making rather than data hunting, driving a verifiable <span class="highlight">~20%</span> operational efficiency gain across the fleet.</li>            
                 </ul>
             </div>
         </div>
         
         <!-- The Italicized Architectural Thesis -->
         <div class="strategic-anchor">
-            "Our architectural priority is enterprise safety: we overlay AI orchestration using read-only adapters, delivering automation with zero risk to your core SAP and Salesforce environments."[cite: 1]
+            "Our architectural priority is enterprise safety: we overlay AI orchestration using read-only adapters, delivering automation with zero risk to your core SAP and Salesforce environments."
         </div>
     </div>
 
@@ -67,35 +67,35 @@
             <div class="card">
                 <h3>Integration & API Topology</h3>
                 <ul>
-                    <li><strong>Connectivity:</strong> Audit existing SAP and Salesforce endpoints to ensure smooth, secure access[cite: 1].</li>
-                    <li><strong>Translation:</strong> Determine if we need lightweight middleware to translate legacy ERP data for the AI[cite: 1].</li>
-                    <li><strong>Performance:</strong> Validate response times so we hit that 30-second triage target, even during morning peak hours[cite: 1].</li>
+                    <li><strong>Connectivity:</strong> Audit existing SAP and Salesforce endpoints to ensure smooth, secure access.</li>
+                    <li><strong>Translation:</strong> Determine if we need lightweight middleware to translate legacy ERP data for the AI.</li>
+                    <li><strong>Performance:</strong> Validate response times so we hit that 30-second triage target, even during morning peak hours.</li>
                 </ul>
             </div>
             
             <div class="card">
                 <h3>IoT Telemetry & Edge Latency</h3>
                 <ul>
-                    <li><strong>Data Flow:</strong> Map how your elevators transmit faults- whether streaming live via Azure Event Hubs or in batches[cite: 1].</li>
-                    <li><strong>Signal Clarity:</strong> Identify where noise filtering happens (at the edge or in the cloud) to feed the AI actionable alerts[cite: 1].</li>
-                    <li><strong>Standardization:</strong> Unify sensor payloads so the AI never hallucinates over dirty data formats[cite: 1].</li>
+                    <li><strong>Data Flow:</strong> Map how your elevators transmit faults- whether streaming live via Azure Event Hubs or in batches.</li>
+                    <li><strong>Signal Clarity:</strong> Identify where noise filtering happens (at the edge or in the cloud) to feed the AI actionable alerts.</li>
+                    <li><strong>Standardization:</strong> Unify sensor payloads so the AI never hallucinates over dirty data formats.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h3>Security & Access Guardrails</h3>
                 <ul>
-                    <li><strong>Zero Trust:</strong> Lock down the AI with strict access controls, granting it strictly <span class="highlight">read-only</span> access to your systems[cite: 1].</li>
-                    <li><strong>Human Authority:</strong> Keep your dispatchers in the driver's seat by mandating 1-click approvals for all parts orders over €500[cite: 1].</li>
+                    <li><strong>Zero Trust:</strong> Lock down the AI with strict access controls, granting it strictly <span class="highlight">read-only</span> access to your systems.</li>
+                    <li><strong>Human Authority:</strong> Keep your dispatchers in the driver's seat by mandating 1-click approvals for all parts orders over €500.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h3>Compliance & Data Governance</h3>
                 <ul>
-                    <li><strong>Privacy First:</strong> Automatically mask technician GPS and shift data in the cloud to guarantee GDPR compliance[cite: 1].</li>
-                    <li><strong>Future-Proofing:</strong> Build transparent audit trails from day one to align with incoming EU AI Act standards[cite: 1].</li>
-                    <li><strong>Encryption:</strong> Secure every internal system-to-agent request with enterprise-grade mutual TLS (mTLS)[cite: 1].</li>
+                    <li><strong>Privacy First:</strong> Automatically mask technician GPS and shift data in the cloud to guarantee GDPR compliance.</li>
+                    <li><strong>Future-Proofing:</strong> Build transparent audit trails from day one to align with incoming EU AI Act standards.</li>
+                    <li><strong>Encryption:</strong> Secure every internal system-to-agent request with enterprise-grade mutual TLS (mTLS).</li>
                 </ul>
             </div>
 
@@ -112,14 +112,14 @@
             <div class="arch-col-v2" style="flex: 1;">
                 <div class="arch-card-v2 card-edge">
                     <div class="arch-header-v2">IoT Edge <span class="arch-badge" style="background:#F59E0B">Sensor</span></div>
-                    <p class="arch-desc-v2">Elevator 402 Anomaly / Fault Detection[cite: 1]</p>
+                    <p class="arch-desc-v2">Elevator 402 Anomaly / Fault Detection</p>
                 </div>
                 
                 <div class="flow-arrow-down">↓ <span style="font-size:0.85rem; font-weight:normal;">Live Stream</span> ↓</div>
                 
                 <div class="arch-card-v2 card-azure">
                     <div class="arch-header-v2">Event Hubs <span class="arch-badge" style="background:#0078D4">Azure</span></div>
-                    <p class="arch-desc-v2">Ingestion & Telemetry Buffering[cite: 1]</p>
+                    <p class="arch-desc-v2">Ingestion & Telemetry Buffering</p>
                     <div class="flow-arrow-right">→</div>
                 </div>
             </div>
@@ -131,8 +131,8 @@
                         Agentic Orchestrator
                         <span class="arch-badge" style="background:#3B82F6; font-size:0.85rem;">LangGraph</span>
                     </div>
-                    <p class="arch-desc-v2" style="color:#fff; margin-bottom: 0.5rem;"><strong>LLM Reasoning:</strong> Claude 3.5 Haiku[cite: 1]</p>
-                    <p class="arch-desc-v2" style="font-size: 0.9rem;">Maintains triage state, dynamically selects tool calls, and formats final work order payloads[cite: 1].</p>
+                    <p class="arch-desc-v2" style="color:#fff; margin-bottom: 0.5rem;"><strong>LLM Reasoning:</strong> Claude 3.5 Haiku</p>
+                    <p class="arch-desc-v2" style="font-size: 0.9rem;">Maintains triage state, dynamically selects tool calls, and formats final work order payloads.</p>
                     
                     <div class="mcp-zone">
                         <div class="mcp-label">Model Context Protocol (Enterprise Adapters)</div>
@@ -167,7 +167,7 @@
                         <span class="arch-badge" style="background:#8B8CDE;">MS Teams</span>
                     </div>
                     <p class="arch-desc-v2" style="color:#E2E8F0; font-size:0.95rem; font-style:italic;">
-                        "Elevator 402 Fault. Actuator in Vantaa stock. Tech ID 884 is 10 mins away. Estimated Cost €550 (Exceeds €500 automated limit - approval required)."[cite: 1]
+                        "Elevator 402 Fault. Actuator in Vantaa stock. Tech ID 884 is 10 mins away. Estimated Cost €550 (Exceeds €500 automated limit - approval required)."
                     </p>
                     <div class="teams-btn-group">
                         <div class="teams-btn approve">Approve</div>
@@ -197,10 +197,10 @@
             <div class="card">
                 <h3>Lean Delivery Pod (4 Technical Specialists)</h3>
                 <ul style="margin-top: 1.5rem; gap: 1rem; display: flex; flex-direction: column;">
-                    <li><strong>Lead AI Architect (1 FTE):</strong> Security governance, MCP tool permissions, and enterprise integration sign-off[cite: 1].</li>
-                    <li><strong>Senior Integration Engineer (1 FTE):</strong> FastMCP server development, ERP/CRM API adapters, and mTLS security[cite: 1].</li>
-                    <li><strong>AI Engineer (1 FTE):</strong> LangGraph orchestration state machine, prompt contracts, and deterministic tool validation[cite: 1].</li>
-                    <li><strong>Data Engineer (1 FTE):</strong> IoT telemetry streaming, Event Hubs buffering, and data payload formatting[cite: 1].</li>
+                    <li><strong>Lead AI Architect (1 FTE):</strong> Security governance, MCP tool permissions, and enterprise integration sign-off.</li>
+                    <li><strong>Senior Integration Engineer (1 FTE):</strong> FastMCP server development, ERP/CRM API adapters, and mTLS security.</li>
+                    <li><strong>AI Engineer (1 FTE):</strong> LangGraph orchestration state machine, prompt contracts, and deterministic tool validation.</li>
+                    <li><strong>Data Engineer (1 FTE):</strong> IoT telemetry streaming, Event Hubs buffering, and data payload formatting.</li>
                 </ul>
             </div>
             <div class="card" style="padding: 1rem 2rem;">
@@ -216,33 +216,33 @@
                         <!-- CapEx Section -->
                         <tr class="row-capex">
                             <td><strong>One-Off Cloud Setup (CapEx)</strong></td>
-                            <td>Initial provisioning of isolated Dev, UAT, and Prod environments via Terraform; mTLS security certs and networking tunnels[cite: 1].</td>
+                            <td>Initial provisioning of isolated Dev, UAT, and Prod environments via Terraform; mTLS security certs and networking tunnels.</td>
                             <td><span class="highlight">€5,000 - €8,000</span><br><small>(Paid once)</small></td>
                         </tr>
                         
                         <!-- OpEx Section -->
                         <tr class="row-opex">
                             <td><strong>Cloud Hosting (OpEx)</strong></td>
-                            <td>Azure Container Apps (serverless FastMCP hosting) + Azure Event Hubs + API Management gateway across all environments[cite: 1].</td>
+                            <td>Azure Container Apps (serverless FastMCP hosting) + Azure Event Hubs + API Management gateway across all environments.</td>
                             <td><span class="highlight">€550 - €1,000 / mo</span></td>
                         </tr>
                         <tr class="row-opex">
                             <td><strong>LLM Inference Tokens (OpEx)</strong></td>
-                            <td>Multi-turn tool execution tokens covering ~15,000 automated monthly dispatches (Dev, UAT, and Live Production)[cite: 1].</td>
+                            <td>Multi-turn tool execution tokens covering ~15,000 automated monthly dispatches (Dev, UAT, and Live Production).</td>
                             <td><span class="highlight">€750 - €1,100 / mo</span></td>
                         </tr>
                         
                         <!-- Standout Total Row -->
                         <tr class="row-total">
                             <td><strong>Total Steady-State Run (OpEx)</strong></td>
-                            <td>Combined monthly cloud infrastructure and model consumption[cite: 1].</td>
+                            <td>Combined monthly cloud infrastructure and model consumption.</td>
                             <td><strong style="color: #10B981; font-size: 1.15rem;">€1,300 - €2,100 / mo</strong></td>
                         </tr>
                         
                         <!-- Maintenance Section -->
                         <tr class="row-maintenance">
                             <td><strong>Ongoing Maintenance</strong></td>
-                            <td>Fractional support (0.2 FTE equivalent) for schema versioning and MCP adapter maintenance[cite: 1].</td>
+                            <td>Fractional support (0.2 FTE equivalent) for schema versioning and MCP adapter maintenance.</td>
                             <td>Internal Team Run</td>
                         </tr>
                     </tbody>
@@ -267,37 +267,37 @@
             <div class="timeline-card">
                 <h3>Weeks 1-2:<br>Discovery & Sandboxing</h3>
                 <ul>
-                    <li>Audit SAP and Salesforce endpoints; verify mock test data availability[cite: 1].</li>
-                    <li>Deploy isolated Azure sandbox via Infrastructure-as-Code[cite: 1].</li>
+                    <li>Audit SAP and Salesforce endpoints; verify mock test data availability.</li>
+                    <li>Deploy isolated Azure sandbox via Infrastructure-as-Code.</li>
                 </ul>
-                <div class="stage-gate"><strong>Stage Gate:</strong><br>Successful read-only API handshake from all three systems[cite: 1].</div>
+                <div class="stage-gate"><strong>Stage Gate:</strong><br>Successful read-only API handshake from all three systems.</div>
             </div>
 
             <div class="timeline-card">
                 <h3>Weeks 3-5:<br>Build MCP & LangGraph</h3>
                 <ul>
-                    <li>Containerize the 3 FastMCP microservices on Azure Container Apps[cite: 1].</li>
-                    <li>Implement deterministic agent state machines and human-in-the-loop triggers[cite: 1].</li>
+                    <li>Containerize the 3 FastMCP microservices on Azure Container Apps.</li>
+                    <li>Implement deterministic agent state machines and human-in-the-loop triggers.</li>
                 </ul>
-                <div class="stage-gate"><strong>Stage Gate:</strong><br>Kamppi test scenario runs end-to-end under 30 seconds in staging[cite: 1].</div>
+                <div class="stage-gate"><strong>Stage Gate:</strong><br>Kamppi test scenario runs end-to-end under 30 seconds in staging.</div>
             </div>
 
             <div class="timeline-card">
                 <h3>Weeks 6-8:<br>Helsinki Regional Pilot</h3>
                 <ul>
-                    <li>Deploy into live production for a single dispatch center and elevator line[cite: 1].</li>
-                    <li>Dispatchers use the 1-click confirmation interface[cite: 1].</li>
+                    <li>Deploy into live production for a single dispatch center and elevator line.</li>
+                    <li>Dispatchers use the 1-click confirmation interface.</li>
                 </ul>
-                <div class="stage-gate"><strong>Stage Gate:</strong><br>Zero erroneous part orders; dispatcher satisfaction >90%[cite: 1].</div>
+                <div class="stage-gate"><strong>Stage Gate:</strong><br>Zero erroneous part orders; dispatcher satisfaction >90%.</div>
             </div>
 
             <div class="timeline-card">
                 <h3>Weeks 9-10:<br>Value Verification & Scale</h3>
                 <ul>
-                    <li>Measure realized fleet capacity against the 20% operational efficiency target[cite: 1].</li>
-                    <li>Publish Architectural Decision Records (ADRs) and initiate phased rollout across the Nordic fleet[cite: 1].</li>
+                    <li>Measure realized fleet capacity against the 20% operational efficiency target.</li>
+                    <li>Publish Architectural Decision Records (ADRs) and initiate phased rollout across the Nordic fleet.</li>
                 </ul>
-                <div class="stage-gate" style="background: rgba(59, 130, 246, 0.1); border-left-color: #3B82F6;"><strong>Final Handover:</strong><br>Validated ROI and production-ready architecture blueprint[cite: 1].</div>
+                <div class="stage-gate" style="background: rgba(59, 130, 246, 0.1); border-left-color: #3B82F6;"><strong>Final Handover:</strong><br>Validated ROI and production-ready architecture blueprint.</div>
             </div>
 
         </div>
@@ -310,7 +310,7 @@
         </div>
 
         <div style="margin-top: 1.5rem; text-align: center; color: var(--text-muted); font-style: italic;">
-            "Parallel development ensures we safely hit our 10-week go-live target without compromising enterprise security."[cite: 1]
+            "Parallel development ensures we safely hit our 10-week go-live target without compromising enterprise security."
         </div>
     </div>
 
